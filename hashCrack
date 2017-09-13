@@ -1,0 +1,1 @@
+curl -s "https://api.leakbase.pw/hash/?hash=HASH_HERE" | php -r 'echo "Password: ".json_decode(file_get_contents("php://stdin"))->plain;'
